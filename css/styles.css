@@ -5,19 +5,21 @@ body {
 }
 
 a {
+  /* убирает подчеркивание ссылок */
   text-decoration: none;
   color: #757575;
 }
 
 li {
-  list-style-type: none; /* Убираем маркеры */
+  /* Убираем маркеры */
+  list-style-type: none;
 }
 
 ul {
   margin-left: 0; /* Отступ слева в браузере IE и Opera */
   padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
-
+/* site logo */
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -26,12 +28,17 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
 }
+.logo:hover,
+.logo:focus {
+  color: #2196f3;
+}
 
 .logo > span {
   color: #2196f3;
 }
 
-.main-nav a {
+/* nave menu */
+.main-nav .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -39,7 +46,8 @@ ul {
   color: #212121;
 }
 
-.main-nav a:hover {
+.main-nav .link:hover,
+.main-nav .link:focus {
   color: #2196f3;
 }
 
@@ -99,15 +107,7 @@ h1 {
   color: #757575;
 }
 
-.employment h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.team h2 {
+h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
