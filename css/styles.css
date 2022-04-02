@@ -1,24 +1,35 @@
+/* задание глобальных переменных */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --invert-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --background: #2f303a;
+  --background-section: #f5f4fa;
+}
+
 body {
   font-family: 'Roboto';
   font-style: normal;
-  color: #212121;
+  color: var(--primary-text-color);
 }
-
 a {
   /* убирает подчеркивание ссылок */
   text-decoration: none;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
-
 li {
   /* Убираем маркеры */
   list-style-type: none;
 }
-
 ul {
   margin-left: 0; /* Отступ слева в браузере IE и Opera */
   padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
+.hidden {
+  display: none;
+}
+
 /* site logo */
 .logo {
   font-family: 'Raleway';
@@ -26,15 +37,14 @@ ul {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .logo:hover,
 .logo:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
-
 .logo > span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* nave menu */
@@ -43,12 +53,16 @@ ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
-
+/* цвет наведение на меню  */
 .main-nav .link:hover,
 .main-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+/* цвет меню текущей страницы */
+.main-nav .link.current {
+  color: var(--accent-color);
 }
 
 .header-contact {
@@ -56,13 +70,11 @@ ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
-
 .header-contact a:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
-
 h1 {
   font-weight: 900;
   font-size: 44px;
@@ -70,10 +82,9 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #757575;
+  color: var(--invert-text-color);
+  background-color: var(--secondary-text-color);
 }
-
 .main-btn {
   font-weight: 700;
   font-size: 16px;
@@ -82,13 +93,10 @@ h1 {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--invert-text-color);
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-.hidden {
-  display: none;
 }
 
 .features h3 {
@@ -104,7 +112,7 @@ h1 {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 h2 {
@@ -129,11 +137,11 @@ h2 {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--accent-color);
 }
 
 footer {
-  background: #2f303a;
+  background: var(--background);
 }
 .logo-footer {
   font-family: 'Raleway';
@@ -141,11 +149,11 @@ footer {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--invert-text-color);
 }
 
 .logo-footer > span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 footer > a > address {
@@ -153,7 +161,7 @@ footer > a > address {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--invert-text-color);
 }
 footer > ul > li > a {
   font-weight: 400;
@@ -175,8 +183,8 @@ footer > ul > li > a {
 }
 
 .work-exls-nav button:hover {
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--invert-text-color);
+  background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -194,5 +202,5 @@ footer > ul > li > a {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
