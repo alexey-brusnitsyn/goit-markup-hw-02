@@ -11,6 +11,7 @@
 body {
   font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
   font-style: normal;
+  font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -34,7 +35,6 @@ ul {
 /* site logo */
 .logo {
   font-family: 'Raleway';
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--primary-text-color);
@@ -86,9 +86,8 @@ h1 {
   background-color: var(--secondary-text-color);
 }
 .main-btn {
-  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1, 87;
   display: flex;
   align-items: center;
   text-align: center;
@@ -97,10 +96,10 @@ h1 {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .features h3 {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -114,7 +113,6 @@ h1 {
 }
 
 h2 {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -140,7 +138,6 @@ footer {
 }
 .logo-footer {
   font-family: 'Raleway';
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--invert-text-color);
@@ -163,6 +160,10 @@ footer > ul > li > a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+footer a:hover {
+  color: var(--accent-color);
+}
+
 /* Страница примеры работ */
 .work-exls-nav button {
   font-weight: 500;
@@ -171,6 +172,7 @@ footer > ul > li > a {
   text-align: center;
   background: #f5f4fa;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .work-exls-nav button:hover {
@@ -182,7 +184,6 @@ footer > ul > li > a {
 }
 
 .work-project > ul > li > h3 {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
