@@ -29,9 +29,18 @@ ul {
   margin-left: 0; /* Отступ слева в браузере IE и Opera */
   padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
+/* скрытие элементов */
 .hidden {
   display: none;
 }
+/* Глобальный border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Остальной код */
 
 /* site logo */
 .logo {
