@@ -7,6 +7,43 @@
   --background: #2f303a;
   --background-section: #f5f4fa;
 }
+/* Глобальные настройки */
+a {
+  /* убирает подчеркивание ссылок */
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+li {
+  /* Убираем маркеры */
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding-left: 0;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+/* скрытие элементов - не подходит для семантики */
+.hidden {
+  display: none;
+}
+
+/* Глобальный border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* для проверки отступов от элементов */
+.test-content {
+  outline: 2px solid tomato;
+  background-color: green;
+}
+
 
 /* общие настройки */
 body {
@@ -16,29 +53,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-a {
-  /* убирает подчеркивание ссылок */
-  text-decoration: none;
-  color: var(--secondary-text-color);
-}
-li {
-  /* Убираем маркеры */
-  list-style-type: none;
-}
-ul {
-  margin-left: 0; /* Отступ слева в браузере IE и Opera */
-  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
-}
-/* скрытие элементов */
-.hidden {
-  display: none;
-}
-/* Глобальный border-box */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 /* Остальной код */
 
